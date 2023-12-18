@@ -4,58 +4,124 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <script src="/src/Js/index.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/01821c8375.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
-    <nav>
-      <h3>Yohannes</h3>
-      <ul>
-        <li><a href="/src/index.html">Home</a></li>
-        <li><a href="/src/aboutme.html">About me</a></li>
-        <li><a href="/src/portfolio.html">Portfolio</a></li>
-        <li><a href="/src/resume.html">Resume</a></li>
-        <li><a href="/src/hobbies.html">Hobbies</a></li>
-        <li><a href="/src/contact.html">Contact</a></li>
-      </ul>
+  <body class="has-background-black">
+    <nav
+      class="navbar has-background-black mb-4 pb-2 is-dark navbar-tab-hover-background-color-danger"
+    >
+      <div class="navbar-brand">
+        <a
+          class="navbar-item is-size-3 has-text-weight-bold py-2 px-2 has-text-light"
+          ><span class="has-text-danger-dark">Y</span>ohannes</a
+        >
+
+        <a role="button" class="navbar-burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <div class="navbar-menu has-background-black" id="nav-links">
+        <div class="navbar-end">
+          <a href="/src/index.html" class="navbar-item has-text-light">Home</a>
+          <a href="/src/aboutme.html" class="navbar-item has-text-light"
+            >About me</a
+          >
+          <a href="/src/portfolio.html" class="navbar-item has-text-light"
+            >Portfolio</a
+          >
+          <a href="/src/resume.html" class="navbar-item has-text-light"
+            >Resume</a
+          >
+          <a href="/src/hobbies.html" class="navbar-item has-text-light"
+            >Hobbies</a
+          >
+          <a href="/src/contact.html" class="navbar-item has-text-light"
+            >Contact</a
+          >
+        </div>
+      </div>
     </nav>
+    <section class="hero is-fullheight">
+      <section class="section columns is-multiline">
+        <div class="container column is-6 has-text-light has-text-centered">
+          <h2 class="title has-text-weight-bold has-text-danger-dark">
+            Contact Me
+          </h2>
 
-    <main>
-      <section class="feedback">
-        <h4>Name:</h4>
-        <input type="text" placeholder="Type Name" />
-        <h4>Email:</h4>
+          <h4>Name:</h4>
+          <input
+            class="input is-danger mt-2 mb-2"
+            type="text"
+            placeholder="Type Name"
+          />
+          <h4>Email:</h4>
 
-        <input type="text" placeholder="Type Email" />
-        <h4>Message:</h4>
+          <input
+            class="input is-danger mt-2 mb-2"
+            type="text"
+            placeholder="Type Email"
+          />
+          <h4>Message:</h4>
 
-        <input type="text" id="emailLink" placeholder="Write Message" />
-        <div class="send">
-          <a href="mailto:solomonjohna21@gmail.com">Send Email</a>
+          <textarea
+            class="textarea is-danger mt-2 mb-2"
+            type="text"
+            placeholder="Write Message"
+          ></textarea>
+          <a
+            class="button mt-6 is-danger is-outlined has-text-end mt-auto mb-4"
+            href="mailto:solomonjohna21@gmail.com"
+            >Send Email</a
+          >
+        </div>
+
+        <div class="container column is-6 has-text-light">
+          <h4>Email - solomonjohna21@gmail.com</h4>
+          <h4>
+            Phone number - +251911359492
+            <a href="tel:+251911359492"
+              ><i class="fa-solid fa-phone" style="color: #ac1111"></i
+            ></a>
+          </h4>
+          <div class="columns is-multiline">
+            <h4 class="column is-12 pt-6">Social Media</h4>
+            <div class="column is-3 columns">
+              <div class="column is-3">
+                <a href=""
+                  ><i class="fa-brands fa-facebook" style="color: #ad1f2d"></i
+                ></a>
+              </div>
+              <div class="column is-3">
+                <a
+                  href="https://www.linkedin.com/in/yohannes-solomon-521386297/"
+                >
+                  <i class="fa-brands fa-linkedin" style="color: #b21515"></i
+                ></a>
+              </div>
+              <div class="column is-3">
+                <a href="https://twitter.com/Johnasolomon11"
+                  ><i class="fa-brands fa-x-twitter" style="color: #c11515"></i
+                ></a>
+              </div>
+              <div class="column is-3">
+                <a href="https://t.me/johna21"
+                  ><i class="fa-brands fa-telegram" style="color: #b81414"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <article>
-        <h2>Contact Me</h2>
-        <h4>Email - solomonjohna21@gmail.com</h4>
-        <h4>
-          Phone number - +251911359492 <a href="tel:+251911359492">call</a>
-        </h4>
-        <div class="socials">
-          <h4>Social Media</h4>
-          <div class="social">
-            <a href="">Fb</a>
-          </div>
-          <div class="social">
-            <a href="https://www.linkedin.com/in/yohannes-solomon-521386297/">
-              Linkedin</a
-            >
-          </div>
-          <div class="social">
-            <a href="https://twitter.com/Johnasolomon11">Twitter</a>
-          </div>
-          <div class="social">
-            <a href="https://t.me/johna21">telegram</a>
-          </div>
-        </div>
-      </article>
-    </main>
+    </section>
   </body>
 </html>
